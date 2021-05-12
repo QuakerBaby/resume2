@@ -1,0 +1,345 @@
+@keyframes moving1 {
+  from { width: 0%;}		  
+  to  { width: 90%; }
+}       
+
+@keyframes moving2 {
+  from { width: 0%;}		  
+  to  { width: 80%; }
+} 
+
+@keyframes moving3 {
+  from { width: 0%;}		  
+  to  { width:60%; }
+} 
+
+@keyframes moving4 {
+  from { width: 0%;}		  
+  to  { width: 60%; }
+} 
+
+@keyframes timeboxspan1{
+  from{
+        width: 430px;
+      }
+
+  to{
+      width: 430px;
+      transform: perspective(250px) rotateY(360deg);
+      background-image: url(img/exp5.jpg);   
+  }
+}
+
+@keyframes timeboxspan2{
+  from{
+        width: 430px;
+      }
+
+  to{
+      width: 430px;
+      transform: perspective(250px) rotateY(360deg);
+      background-image: url(img/exp3.jpg);   
+  }
+}
+
+@keyframes timeboxspan3{
+  from{
+        width: 430px;
+      }
+
+  to{
+      width: 430px;
+      transform: perspective(250px) rotateY(360deg);
+      background-image: url(img/exp7.png);   
+  }
+}
+
+
+
+* {
+  box-sizing: border-box
+}
+
+body{
+  font-family: Helvetica, sans-serif;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.left{
+  float: right;
+  border: solid;
+}
+
+body{
+  background-color: rgba(243, 234, 234, 0.781);
+}
+
+.iconmargin{
+  margin-top: 5px;
+}
+
+.content{
+  float: left;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius:10px;
+  padding-top: 40px;
+  height: 375px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.chickensoup{
+  font-size: 20px;
+  color: rgb(218, 31, 31);
+}
+
+.name{
+  background-color: coral ;
+  width: 250px;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 30px;
+  border-radius:20px;
+}
+
+.myself{
+  background-color: white;
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-align: left;
+  border-radius:10px;
+  padding: 10px;
+}
+
+.selfdetail{
+  float: left;
+  color: rgb(118, 122, 201);
+  font-size: 20px;
+  text-shadow: rgb(3, 3, 3) 1px 1px 2px;
+  padding: 10px;
+}
+
+.skill{
+  float: left;
+  margin-left: 70px;
+  margin-right: 10px;
+}
+
+.skillcontainer {
+  border-radius:20px;
+  width: 400px;
+  background-color: #ddd;
+}
+
+.skills {
+  border-radius:20px;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.html {
+  width: 90%;
+  background-color: #04AA6D;
+  animation: moving1  1s  linear ;
+}
+
+.css {
+  width: 80%; 
+  background-color: #2196F3;
+  animation: moving2  1s  linear ;
+}
+.js {
+  width: 60%;
+  background-color: #f44336;
+  animation: moving3  1s  linear ;
+}
+
+.java {
+  width: 60%;
+  background-color: #ffee06;
+  animation: moving4  1s  linear ;
+}
+ 
+ .timelinebox{
+  background-color: white;
+  width: 96%;
+  margin-top: 400px;
+  margin-left: 10px;
+  text-align: left;
+  border-radius:10px;
+  padding: 50px;
+ }
+
+/*線*/
+ .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1470px;
+  background-color: rgb(68, 68, 68);
+  top: 480px;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/*球*/
+.ball{
+  width:30px;
+  height:30px; 
+  position: absolute;
+  top: 670px;
+  left: 48.8%;
+  border-radius:999em;
+  background-color:white;
+  border: solid chocolate;
+  z-index: 1;
+}
+
+.ball2{
+  width:30px;
+  height:30px; 
+  position: absolute;
+  top: 1000px;
+  left: 48.8%;
+  border-radius:999em;
+  background-color:white;
+  border: solid chocolate;
+  z-index: 1;
+}
+
+.ball3{
+  width:30px;
+  height:30px; 
+  position: absolute;
+  top: 1330px;
+  left: 48.8%;
+  border-radius:999em;
+  background-color:white;
+  border: solid chocolate;
+  z-index: 1;
+}
+
+.ball4{
+  width:30px;
+  height:30px; 
+  position: absolute;
+  top: 1660px;
+  left: 48.8%;
+  border-radius:999em;
+  background-color:white;
+  border: solid chocolate;
+  z-index: 1;
+}
+/*左*/
+.leftcenter{
+  margin-top: 10px;
+  margin-left: 40px;
+  text-align: center;
+  width: 430px;
+  height: 30px;
+}
+
+.leftarea{
+  background-image:url(img/exp2.jpg);
+  width: 430px;
+  height: 300px;
+  position: relative;
+  left: 50px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: -10px;
+  background-size:cover ;
+  border: solid;
+}
+
+.leftarea:hover{
+  animation: timeboxspan1 1s;
+  background-size:100%;
+  animation-fill-mode: forwards;
+}
+
+.leftcenter2{
+  margin-top: 10px;
+  margin-left: 40px;
+  text-align: center;
+  width: 430px;
+  height: 30px;
+}
+
+.leftarea2{
+  background-image:url(img/exp6.png);
+  width: 430px;
+  height: 300px;
+  position: relative;
+  left: 50px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: -10px;
+  background-size: cover ;
+  border: solid;
+}
+
+.leftarea2:hover{
+  animation: timeboxspan3 1s;
+  background-size:100%;
+  animation-fill-mode: forwards;
+}
+/*右*/
+.rightcenter{
+  margin-top: 10px;
+  margin-left: 650px;
+  text-align: center;
+  width: 430px;
+  height: 30px;
+}
+
+.rightarea{
+  background-image:url(img/exp4.jpg);
+  width: 430px;
+  height: 300px;
+  position: relative;
+  left: 650px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: -10px;
+  background-size:cover ;
+  border: solid;
+}
+
+.rightarea:hover{
+  animation: timeboxspan2 1s;
+  background-size:100%;
+  animation-fill-mode: forwards;
+}
+
+.rightcenter2{
+  margin-top: 10px;
+  margin-left: 650px;
+  text-align: center;
+  width: 430px;
+  height: 30px;
+}
+
+.rightarea2{
+  background-image:url(img/exp8.png);
+  width: 430px;
+  height: 300px;
+  position: relative;
+  left: 650px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: -10px;
+  background-size: cover ;
+  border: solid;
+}
+
